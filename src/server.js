@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/summarize", summarizeRoute);
-
+app.use(express.static("public"));
 // Error handling
 app.use(errorHandler);
 
